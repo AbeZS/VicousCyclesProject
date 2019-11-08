@@ -1,0 +1,51 @@
+VICIOUS CYCLES DESIGN BRIEF
+
+10.15.19
+
+Summary of project's purpose:
+
+    - Website for Vicious Cycles, a local store for bikers. Specifically designer bikes and custom BMX bikes. The website will serve as a shop, gallery, and local news source for bike enthusiasts.
+    
+What is the challenge?
+    
+    - Creating a sleek, strong, but inviting place for bike enthusiasts to view and buy bikes and accessories.
+    
+Why now?
+
+    - Vicious Cycles does not have a website and needs one so that they can increase sales and have a presence in the online bike community/marketplace.
+    
+Objectives?
+
+    - Have a gallery for bikes the shop has sold and put together. Have a shop/catalog of new items, clearance items, and all items in between. Have a contact page, both within the US and international. Have a news/posts page(?)
+    
+Audience?
+
+    - Bike enthusiasts, mostly local ones.
+    
+What's unique about Vicious Cycles?
+
+    - Vicious Cycles is a community and business run by bike enthusiasts in the local area with competitive prices on top products. They also do custom builds that have no monetary limit.
+    
+What's the schedule?
+
+    - n/a
+    
+Deliverables?
+
+    - Shop/catalog, gallery, contact page
+    
+Technical requirements?
+
+    - n/a
+    
+    
+SUMMARY:
+
+SLEEK
+INTUITIVE
+STRONG
+SHOP
+GALLERY
+CONTACT
+STORE INFO
+NEWS AND POSTS (?)

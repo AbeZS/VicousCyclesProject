@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700i,800i&display=swap" rel="stylesheet">
+        <title>Contact Vicious Cycles</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="grid-item-header grid-container-header">
+                <!--insert responsive nav here when js is learned-->
+                <nav>
+                    <label for="toggle">&#9776</label>
+                    <input type="checkbox" id="toggle">
+                    <div class="hamburger-menu">
+                        <a href="#" class="product"><h4>PRODUCT</h4></a>
+                        <br>
+                        <a href="contact.html" class='contact'><h4>CONTACT</h4></a>
+                        <br>
+                        <a href="#" class="about"><h4>ABOUT</h4></a>
+                        <br>
+                        <a href="#" class="faq"><h4>FAQ</h4></a>
+                    </div>
+                </nav>
+                    <a href="index1.html" class="logo"><img src="images/vicious-cycles-logo-1.svg" alt="Vicious Cycles Logo" class="logo-image"></a>
+                <div class="socialButtons">
+                    <!--figure out how to get rid of twitter buttons padding in its image-->
+                    <a href="https://twitter.com/login" target="_blank"><img src="images/Twitter_Logo_Blue.png" alt="Twitter icon that leads to their login page" class="twitter-icon"></a>
+                    <a href="https://en-gb.facebook.com/login/" target="_blank"><img src="images/f_logo_RGB-Blue_58.png" alt="Facebook icon that leads to their login page" class="fb-icon"></a>
+                </div>
+            </header>
+            <main class="grid-item grid-container-main-contact">
+                <section class="contact-header">
+                    <h3>CONTACT</h3>
+                </section>
+                <section class="first-name-area">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                </section>
+                <section class="last-name-area">
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </section>
+                <section class="email-area">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </section>
+                <section class="order-area">
+                    <input type="text" name="order-number" id="order-number" placeholder="Order Number">
+                </section>
+                <section class="reason-area">
+                    <select name="reason" id="reason">
+                        <option value="orders">Orders</option>
+                        <option value="returns">Returns/Exchanges</option>
+                        <option value="lost">Lost Order</option>
+                        <option value="general">General Inquiries</option>
+                        <option value="press">Press</option>
+                    </select>
+                </section>
+                <section class="radio-area">
+                    <label>
+                        <input type="radio" name="location-radio" checked='checked'>
+                        USA
+                    </label>
+                    <label>
+                        <input type="radio" name="location-radio">
+                        International
+                    </label>
+                </section>
+                <section class='checkbox-area'>
+                    <label for="deals-sub">
+                        <input type="checkbox" id="deals-sub">
+                        I would like to subscribe to emails offering the latest deals and coupons on Vicous Cycles products.
+                    </label>
+                    <label for="news-sub">
+                        <input type="checkbox" id="news-sub">
+                        I would like to subscribe to the latest news about Vicous Cycles
+                    </label>
+                    <label for="events-sub">
+                        <input type="checkbox" id="events-sub">
+                        I would like to subscribe to emails about events relating to Vicious Cycles.
+                    </label>
+                </section>
+                <section class="text-field-area">
+                    <label>
+                        Message
+                        <br>
+                        <textarea></textarea>
+                    </label>
+                </section>
+                <section class="send-area">
+                    <input type="submit" id="send" value="Send">
+                </section>
+            </main>
+            <footer class="grid-item grid-container-footer">
+                <section class="footerText">
+                    <p class="small">Copyright © 2019 Vicious Cycles</p>
+                </section>
+                <section class="socialButtons">
+                        <a href="https://twitter.com/login" target="_blank"><img src="images/Twitter_Logo_Blue.png" alt="Twitter icon that leads to their login page" class="twitter-icon"></a>
+                        <a href="https://en-gb.facebook.com/login/" target="_blank"><img src="images/f_logo_RGB-Blue_58.png" alt="Facebook icon that leads to their login page" class="fb-icon"></a>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

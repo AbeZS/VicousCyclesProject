@@ -1,0 +1,388 @@
+/* text and button styles */
+/*figure out how to create stroke/outline for header texts*/
+h1 {
+    font-size: 48pt;
+    font-weight: 800;
+    font-style: italic;
+    color: #FFBB02;
+}
+h2 {
+    font-size: 32pt;
+    font-weight: 800;
+    font-style: italic;
+    color: #FFBB02;
+}
+h3 {
+    font-size: 25pt;
+    font-weight: 800;
+    font-style: italic;
+    color: #FFBB02;
+}
+h4 {
+    font-size: 18pt;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFBB02;
+}
+p {
+    font-size: 14pt;
+    font-weight: 500;
+}
+p.bold {
+    font-size: 11pt;
+    font-weight: 500;
+}
+p.small {
+    font-size: 11pt;
+    font-weight: 500;
+}
+.link-button {
+    position: relative;
+    width: 92px;
+    height: 38px;
+    background: linear-gradient(178.94deg, #FFBB02 59.44%, #FFFFFF 188.84%);
+    border-radius: 1px;
+    justify-self: center;
+    margin-top: 3%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link-button::after {
+    text-decoration: none;
+}
+.link-button b {
+    position: absolute;
+    left: 11.94%;
+    right: 11.94%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+.hide-button {
+    display: none;
+}
+.hide-button2 {
+    display: block;
+}
+/* end text styles */
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+}
+.grid-item {
+    border: 1px solid rgba(173, 173, 173, 0.8);   
+    background-color: #fff;
+    text-align: center
+}
+.grid-item-header {
+    border: 1px solid rgba(155, 155, 155, 0.8);   
+    background-color: #fff;
+}
+/* header */
+header {
+    grid-area: header;
+}
+.grid-container-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0 3% 0 3%;
+}
+nav {
+    text-align: left;
+}
+label {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #FFBB02;
+}
+#toggle {
+    display: none;
+}
+.hamburger-menu {
+    grid-area: hamburger-menu;
+    display: none;
+    margin-left: 3%;
+}
+#toggle:checked + .hamburger-menu {
+    display: block;
+}
+.hamburger-menu h4 {
+    border-bottom: 1px solid #959595;
+}
+.hamburger-menu a {
+    text-decoration: none;
+}
+.product {
+
+}
+.contact {
+
+}
+.about {
+
+}
+.faq {
+
+}
+.logo {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.logo-image {
+    width: 50%;
+    max-width: 100px;
+}
+.socialButtons {
+    display: grid;
+    grid-template-areas: 'twitter-icon facebook-icon';
+    align-content: center;
+    justify-content: center;
+}
+.twitter-icon {
+    width: 30px;
+    margin-right: 20%;
+}
+.fb-icon {
+    width: 27px;
+    margin-left: 20%;
+}
+/* main */
+main {
+    grid-area: main;
+}
+.grid-container-main {
+    display: grid;
+    grid-template-areas: 'banner' 'new' 'line' 'event'
+}
+.contact-header {
+    grid-area: contact-header;
+    text-align: left;
+}
+.grid-container-main-contact {
+    display: grid;
+    grid-template-areas: 'contact-header contact-header' 'first-name-area last-name-area' 'email-area order-area' 'reason-area reason-area' 'radio-area radio-area' 'text-field-area text-field-area' 'checkbox-area checkbox-area' 'send-area send-area';
+    background-color: rgba(39, 39, 39, 1);
+    padding: 0 3%;
+}
+.grid-container-main-contact section {
+    padding: 3% 0;
+}
+input[type=text], input[type=email] {
+    width: 133px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+select {
+    width: 306px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+.first-name-area {
+    grid-area: first-name-area;
+    text-align: left;
+}
+.last-name-area {
+    grid-area: last-name-area;
+    text-align: left;
+}
+.email-area {
+    grid-area: email-area;
+    text-align: left;
+}
+.order-area {
+    grid-area: order-area;
+    text-align: left;
+}
+.reason-area {
+    grid-area: reason-area;
+    text-align: left;
+}
+.radio-area {
+    grid-area: radio-area;
+}
+.checkbox-area {
+    grid-area: checkbox-area;
+}
+.checkbox-area label {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+.radio-area label {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+.text-field-area {
+    grid-area: text-field-area;
+    text-align: left;
+}
+.text-field-area label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+.text-field-area textarea{
+    margin-top: 1%;
+    width: 90%;
+    height: 203px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #959595;
+}
+.send-area {
+    grid-area: send-area;
+    text-align: left;
+}
+input[type=submit] {
+    width: 92px;
+    height: 38px;
+    background-color: #FFBB02;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: Montserrat;
+    color: #272727;
+    cursor: pointer;
+}
+.banner {
+    display: grid;
+    grid-template-areas: 'banner-text';
+    text-align: center;
+    height: 30rem;
+    width: 100%;
+    grid-area: banner;
+    /*background-image: url(/images/bike-banner1.jpg);*/
+    /*must use this address for banner to show on wcet*/
+    background-image: url(/aahmaditorshizi/WEB140/vicious-cycles/images/bike-banner1.jpg);
+    background-size: cover;
+}
+.banner-text {
+    grid-area: banner-text;
+    align-self: center;
+}
+.banner-image1 {
+    background-image: url(images/)
+}
+.new {
+    grid-area: new;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.new-in-stock {
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    
+}
+.bike-product {
+    max-width: 100%;
+}
+.event {
+    grid-area: event;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.event p {
+    grid-column-start: 2;
+    align-self: center;
+    padding: 0 3% 0 3%;
+}
+.event-pic {
+    max-width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / 1;
+}
+/* footer */
+footer {
+    grid-area: footer;
+}
+.grid-container-footer {
+    display: grid;
+    grid-template-areas: 'footerText' 'social-buttons';
+}
+.footerText {
+    grid-area: footerText;
+    color: #959595;
+}
+/*media queries for mobile*/
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+      margin: 0 0 0 0;
+  }
+  .new {
+      grid-template-columns: 1fr;
+  }
+  .new-description {
+      display: none;
+  }
+  .hide-button {
+      display: block;
+      justify-self: end;
+      margin-top: 5%;
+  }
+  .hide-button2 {
+      display: none;
+  }
+  .nis-heading {
+      margin-bottom: 5%;
+  }
+  .line {
+    grid-area: line;
+    display: block;
+    margin-top: 5%;
+    width: 375px;
+    height: 0px;
+    border: 1px solid #BEBEBE;
+}
+  .event {
+      grid-template-columns: 1fr;
+  }
+
+}
+
+
