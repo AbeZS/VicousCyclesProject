@@ -60,9 +60,6 @@ p.small {
 section.new-in-stock form {
     text-align: center;
 }
-button:focus {
-    outline: 0 !important;
-}
 .link-button-a {
     width: 92px;
     height: 38px;
@@ -98,9 +95,6 @@ html, body {
     width: 100%;
     margin: 0;
 }
-body {
-    position: relative;
-}
 .grid-container {
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
@@ -121,63 +115,34 @@ body {
 /* header */
 header {
     grid-area: header;
-    position: fixed;
-    width: 100%;
 }
 .grid-container-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    padding: 10px 3% 10px 3%;
+    padding: 0 3% 0 3%;
 }
 nav {
-    display: inline-grid;
     text-align: left;
-    align-content: center;
-    justify-content: start;
 }
-.burger-icon {
+label {
+    font-size: 3rem;
     cursor: pointer;
-    display: inline;
-    width: max-content;
+    color: #FFBB02;
 }
-.burger-icon-line {
-    width: 30px;
-    height: 4px;
-    background-color: #FFBB02;
-    margin: 6px 0;
-    border: #272727 1px solid;
-}
-.change .b-line-1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .b-line-2 {
-    opacity: 0;
-}
-.change .b-line-3 {    
-    transform: rotate(45deg) translate(-8px, -5px);
-}
-.hamburger-menu {
+#toggle {
     display: none;
 }
-.show-hamburger-menu {
+.hamburger-menu {
+    grid-area: hamburger-menu;
+    display: none;
+    margin-left: 3%;
+}
+#toggle:checked + .hamburger-menu {
     display: block;
-    z-index: 100;
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 3%;
-    background-color: #fff;
-    transition: height 2s;
-    transition-timing-function: ease-in-out;
 }
 .hamburger-menu h4 {
-    /*border-bottom: 1px solid #959595;*/
-    padding: 8px 0 8px 0;
-    margin: 0;
+    border-bottom: 1px solid #959595;
 }
 .hamburger-menu a {
     text-decoration: none;
@@ -237,7 +202,6 @@ nav {
 /* main */
 main {
     grid-area: main;
-    margin-top: 78px;
 }
 .grid-container-main {
     display: grid;
@@ -246,7 +210,6 @@ main {
 .contact-header {
     grid-area: contact-header;
     text-align: left;
-    padding-top: 0 !important;
 }
 /*Contact Page Styles*/
 .grid-container-main-contact {
@@ -364,11 +327,6 @@ input[type=submit] {
     color: #272727;
     cursor: pointer;
     outline: 0;
-    -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-}
-input[type=submit]:hover {
-    background-color: rgb(255, 211, 89);
 }
 /*End Contact Specific Styles*/
 /*About page styles*/
@@ -402,8 +360,6 @@ input[type=submit]:hover {
 .grid-container-main-products .banner:nth-child(1) {
     /*background-color: #eee;*/
     background-image: url(/images/images-for-banners/man-sitting-with-gold-bike3.png);
-    /*background-image: url(/aahmaditorshizi/WEB140/vicious-cycles/images/images-for-banners/man-sitting-with-gold-bike3.png);*/
-    background-position: center;
 }
 .grid-container-main-products .banner:nth-child(2) {
     background-color: #272727;
@@ -412,24 +368,18 @@ input[type=submit]:hover {
 /*New Products page styles*/
 .grid-container-main-products-new {
     display: grid;
-    grid-template-areas: 'products-new-heading' 'grid-container-products-new';
-    grid-row-gap: 8%;
-}
-.grid-container-products-new {
-    grid-area: grid-container-products-new;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 68px;
     grid-row-gap: 8%;
     padding: 0 6%;
 }
-.grid-container-main-products-new h3 {
+.grid-container-main-products-new h2 {
     margin-bottom: 0;
 }
 .products-new-heading {
-    grid-area: products-new-heading;
+    grid-area: 1 / 1 / span 1 / span 3;
     text-align: left;
-    margin-left: 3%;
+    margin-left: -3%;
 }
 .products-bike {
     text-align: left;
@@ -437,11 +387,6 @@ input[type=submit]:hover {
 }
 .products-bike img {
     max-width: 100%;
-}
-.greybox {
-    width: 304px;
-    height: 271px;
-    background-color: #959595;
 }
 .products-bike-texts {
     padding-left: 5%;
@@ -457,9 +402,6 @@ input[type=submit]:hover {
     background-color: #272727;
     color: #fff;
 }
-.products-bike input[type=submit]:hover {
-    background-color: #494949;
-}
 /*End New Products page styles*/
 .banner {
     display: grid;
@@ -471,7 +413,6 @@ input[type=submit]:hover {
 }
 .grid-container-main .banner {
     grid-area: banner;
-    background-position: center;
     background-image: url(/images/bike-banner1.jpg);
     /*must use this address for banner to show on wcet*/
     /*background-image: url(/aahmaditorshizi/WEB140/vicious-cycles/images/bike-banner1.jpg);*/
@@ -509,7 +450,7 @@ input[type=submit]:hover {
     color: inherit;
 }
 .event-pic {
-    max-height: max-content;
+    max-width: 100%;
 }
 /* footer */
 footer {
@@ -543,15 +484,12 @@ footer .socialButtons a {
   .grid-container-main-products .banner h1 {
       font-size: 48px;
   }
-  .grid-container-products-new {
-    grid-template-columns: max-content;
-    grid-row-gap: 3%;
-    justify-content: center;
-
-    padding-bottom: 150px;
-  }
   .grid-container-main-products-new {
-    grid-row-gap: 3%;
+      grid-template-columns: max-content;
+      grid-row-gap: 3%;
+      justify-content: center;
+
+      padding-bottom: 150px;
   }
   .products-new-heading {
         grid-area: 1 / 1 / 2 / span 1;

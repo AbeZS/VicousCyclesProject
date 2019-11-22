@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" href="/hamburgers-master/dist/hamburgers.css">
+        <link rel="shortcut icon" href="/images/vicious-cycles-logo-1.png" />
+        <link rel="icon" href="/images/vicious-cycles-logo-1.png" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700i,800i&display=swap" rel="stylesheet">
         <title>New Products - Vicious Cycles</title>
     </head>
@@ -12,20 +15,23 @@
             <header class="grid-item-header grid-container-header">
                 <!--insert responsive nav here when js is learned-->
                 <nav>
-                    <label for="toggle">&#9776</label>
-                    <input type="checkbox" id="toggle">
-                    <div class="hamburger-menu">
-                        <a href="products.html" class="product"><h4>PRODUCT</h4></a>
-                        <br>
-                        <a href="contact.html" class='contact'><h4>CONTACT</h4></a>
-                        <br>
-                        <a href="about.html" class="about"><h4>ABOUT</h4></a>
-                        <br>
-                        <a href="#" class="faq"><h4>FAQ</h4></a>
-                    </div>
+                    <button class="hamburger hamburger--vortex" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <!--<div class="burger-icon">
+                                <div class="burger-icon-line b-line-1 change">
+                                </div>
+                                <div class="burger-icon-line b-line-2 change">
+                                </div>
+                                <div class="burger-icon-line b-line-3 change">
+                                </div>
+                        </div>-->
                 </nav>
                     <a href="index1.html" class="logo"><img src="images/vicious-cycles-logo-1.svg" alt="Vicious Cycles Logo" class="logo-image"></a>
                 <div class="socialButtons">
+                    <!--figure out how to get rid of twitter buttons padding in its image-->
                     <a href="https://twitter.com/login" target="_blank">
                         <svg width="100%" height="100%" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="twitter-icon">
                         <g transform="matrix(1,0,0,1,-75,-75)">
@@ -45,27 +51,24 @@
                     </a>
 
                     <a href="https://en-gb.facebook.com/login/" target="_blank"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="fb-icon">        <g>
-                                <path class="fb-icon-fill" d="M1024,512c0,-282.77 -229.23,-512 -512,-512c-282.77,0 -512,229.23 -512,512c0,255.554 187.231,467.37 432,505.78l0,-357.78l-130,0l0,-148l130,0l0,-112.8c0,-128.32 76.438,-199.2 193.39,-199.2c56.017,0 114.61,10 114.61,10l0,126l-64.562,0c-63.603,0 -83.438,39.467 -83.438,79.957l0,96.043l142,0l-22.7,148l-119.3,0l0,357.78c244.769,-38.41 432,-250.226 432,-505.78Z"/>
-                                <path d="M711.3,660l22.7,-148l-142,0l0,-96.043c0,-40.49 19.835,-79.957 83.438,-79.957l64.562,0l0,-126c0,0 -58.593,-10 -114.61,-10c-116.952,0 -193.39,70.88 -193.39,199.2l0,112.8l-130,0l0,148l130,0l0,357.78c26.067,4.09 52.784,6.22 80,6.22c27.216,0 53.933,-2.13 80,-6.22l0,-357.78l119.3,0Z" style="fill:#fff;fill-rule:nonzero;"/>
-                            </g>
-                        </svg>
-                    </a>
+                        <svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="fb-icon">
+                            <g><path class="fb-icon-fill" d="M1024,512c0,-282.77 -229.23,-512 -512,-512c-282.77,0 -512,229.23 -512,512c0,255.554 187.231,467.37 432,505.78l0,-357.78l-130,0l0,-148l130,0l0,-112.8c0,-128.32 76.438,-199.2 193.39,-199.2c56.017,0 114.61,10 114.61,10l0,126l-64.562,0c-63.603,0 -83.438,39.467 -83.438,79.957l0,96.043l142,0l-22.7,148l-119.3,0l0,357.78c244.769,-38.41 432,-250.226 432,-505.78Z"/><path d="M711.3,660l22.7,-148l-142,0l0,-96.043c0,-40.49 19.835,-79.957 83.438,-79.957l64.562,0l0,-126c0,0 -58.593,-10 -114.61,-10c-116.952,0 -193.39,70.88 -193.39,199.2l0,112.8l-130,0l0,148l130,0l0,357.78c26.067,4.09 52.784,6.22 80,6.22c27.216,0 53.933,-2.13 80,-6.22l0,-357.78l119.3,0Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></a>
                 </div>
+                <div class="hamburger-menu">
+                        <a href="products.html" class="product"><h4>PRODUCT</h4></a>
+                        <br>
+                        <a href="contact.html" class='contact'><h4>CONTACT</h4></a>
+                        <br>
+                        <a href="about.html" class="about"><h4>ABOUT</h4></a>
+                        <br>
+                        <a href="#" class="faq"><h4>FAQ</h4></a>
+                    </div>
             </header>
             <main class="grid-item grid-container-main-products-new">
                 <h3 class='products-new-heading'>
                     NEW BIKES
                 </h3>
-                <div class="products-bike">
-                    <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
-                    <div class="products-bike-texts">
-                        <h4>MODEL #</h4>
-                        <form action="#">
-                                <input type="submit" value="Details" class="link-button-a">
-                        </form> 
-                    </div>
-                </div>   
+                <section class="grid-container-products-new">
                     <div class="products-bike">
                         <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
                         <div class="products-bike-texts">
@@ -75,42 +78,52 @@
                             </form> 
                         </div>
                     </div>   
-                    <div class="products-bike">
-                        <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
-                        <div class="products-bike-texts">
-                            <h4>MODEL #</h4>
-                            <form action="#">
-                                    <input type="submit" value="Details" class="link-button-a">
-                            </form> 
-                        </div>
-                    </div>   
-                    <div class="products-bike">
-                        <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
-                        <div class="products-bike-texts">
-                            <h4>MODEL #</h4>
-                            <form action="#">
-                                    <input type="submit" value="Details" class="link-button-a">
-                            </form> 
-                        </div>
-                    </div>   
-                    <div class="products-bike">
-                        <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
-                        <div class="products-bike-texts">
-                            <h4>MODEL #</h4>
-                            <form action="#">
-                                    <input type="submit" value="Details" class="link-button-a">
-                            </form> 
-                        </div>
-                    </div>   
-                    <div class="products-bike">
-                        <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
-                        <div class="products-bike-texts">
-                            <h4>MODEL #</h4>
-                            <form action="#">
-                                    <input type="submit" value="Details" class="link-button-a">
-                            </form> 
-                        </div>
-                    </div>   
+                        <div class="products-bike">
+                            <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
+                            <div class="products-bike-texts">
+                                <h4>MODEL #</h4>
+                                <form action="#">
+                                        <input type="submit" value="Details" class="link-button-a">
+                                </form> 
+                            </div>
+                        </div>   
+                        <div class="products-bike">
+                            <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
+                            <div class="products-bike-texts">
+                                <h4>MODEL #</h4>
+                                <form action="#">
+                                        <input type="submit" value="Details" class="link-button-a">
+                                </form> 
+                            </div>
+                        </div>   
+                        <div class="products-bike">
+                            <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
+                            <div class="products-bike-texts">
+                                <h4>MODEL #</h4>
+                                <form action="#">
+                                        <input type="submit" value="Details" class="link-button-a">
+                                </form> 
+                            </div>
+                        </div>   
+                        <div class="products-bike">
+                            <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
+                            <div class="products-bike-texts">
+                                <h4>MODEL #</h4>
+                                <form action="#">
+                                        <input type="submit" value="Details" class="link-button-a">
+                                </form> 
+                            </div>
+                        </div>   
+                        <div class="products-bike">
+                            <img src="images/bikes/304x271-vector-bike-pic-template.png" alt='Edited vector image of a bike from publicdomainvectors.org. Source: OpenClipArt'>
+                            <div class="products-bike-texts">
+                                <h4>MODEL #</h4>
+                                <form action="#">
+                                        <input type="submit" value="Details" class="link-button-a">
+                                </form> 
+                            </div>
+                        </div>   
+                </section>
             </main>
             <footer class="grid-item grid-container-footer">
                     <section class="footerText">
@@ -139,5 +152,7 @@
                     </section>
                 </footer>
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
